@@ -1,0 +1,6 @@
+pillow
+opencv-python
+tensorflow
+streamlit
+keras
+pillow

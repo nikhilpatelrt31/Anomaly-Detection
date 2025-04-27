@@ -1,0 +1,6 @@
+0 color
+1 cut
+2 fold
+3 glue
+4 good
+5 poke
