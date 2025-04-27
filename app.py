@@ -95,14 +95,14 @@ def predict_image_tflite(image_file):
 
 # Sidebar
 st.sidebar.title("Dashboard")
-app_mode = st.sidebar.selectbox("Select Page", ["Home", "About Data", "Leather Anomaly Detection"])
+app_mode = st.sidebar.selectbox("Select Page", ["Home", "About Data", "Anomaly Detection"])
 
 # Main Page
 if app_mode == "Home":
     st.header("")
     st.markdown("""
-# Leather Anomaly Detection in Manufacturing""")
-    st.image("https://imgs.search.brave.com/eBvLVlfi8-X1GfzPxRWQ84WwsUpwsCkRFfYxKYTAZOg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/c2hvcGlmeS5jb20v/cy9maWxlcy8xLzAw/MjkvMDM5Ni81NzYw/L2ZpbGVzLzFfMTEx/MTFmYTEtOWY1OC00/OGNhLTliNDYtM2U2/MDkyYzJmNzVjXzEw/MjR4MTAyNC5wbmc_/dj0xNjIyMjE3MzY3",caption="Leather Anomaly Detection")
+# Anomaly Detection in Manufacturing""")
+    st.image("https://imgs.search.brave.com/eBvLVlfi8-X1GfzPxRWQ84WwsUpwsCkRFfYxKYTAZOg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/c2hvcGlmeS5jb20v/cy9maWxlcy8xLzAw/MjkvMDM5Ni81NzYw/L2ZpbGVzLzFfMTEx/MTFmYTEtOWY1OC00/OGNhLTliNDYtM2U2/MDkyYzJmNzVjXzEw/MjR4MTAyNC5wbmc_/dj0xNjIyMjE3MzY3",caption="Anomaly Detection")
     st.markdown("""
 
 
@@ -130,7 +130,7 @@ elif app_mode == "About Data":
     st.header("About Data")
     st.markdown("""
 
-## Dataset Description: Leather Anomaly Detection
+## Dataset Description: Anomaly Detection
 
 ### Context:
 In leather manufacturing industries, visual inspection is a critical quality control step. Manual inspection, however, can be **inconsistent, time-consuming, and prone to human error**. To address this, we curated a dataset of high-resolution leather surface images, categorized into multiple defect classes typically encountered during the manufacturing process.
@@ -173,8 +173,8 @@ The dataset is organized into **6 distinct classes** representing different type
 
         """)
 
-elif app_mode == "Leather Anomaly Detection":
-    st.header("Leather Anomaly Detection")
+elif app_mode == "Anomaly Detection":
+    st.header("Anomaly Detection")
     test_image = st.file_uploader("Upload an Image", type=["jpg", "jpeg", "png"])
 
     if test_image is not None:
